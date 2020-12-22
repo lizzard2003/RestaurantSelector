@@ -1,0 +1,45 @@
+//pg242 problem 12
+//Restaurant Selector
+
+#include <iostream>
+
+int main() {
+  char vegan,vegitarian,gluten;
+
+std::cout<<"Is Anyone in your party a vegetarian?(y/n)";
+std::cin>>vegitarian;
+std::cout<<"Is Anyone in your party a vegan?(y/n)";
+std::cin>>vegan;
+std::cout<<"Is Anyone in your party a gluten-free?(y/n)";
+std::cin>>gluten;
+
+std::cout<<"Here is your restaurants:"<<std::endl;
+
+if(vegan=='y' && vegitarian=='y' && gluten=='y')
+{
+std::cout<<"The chef's Kitchen\t"<<"   ";
+std::cout<<"Corner cafe";
+}
+if(vegan=='n' && vegitarian=='y' && gluten=='y')
+{
+  std::cout<<"\tMian Street Pizza\t";
+
+}
+
+if(vegan=='n' && vegitarian=='y' && gluten=='y')
+{
+  std::cout<<"\t Mama's Fine Italian"<<"  ";
+}
+if(vegan=='n' && vegitarian=='n' && gluten=='n')
+
+{
+  std::cout<<"\tJoe's Gourmet Burger"<<"  ";
+}
+
+
+
+
+    return 0;
+
+
+}
